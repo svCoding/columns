@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2vw;
+    background-color: #eeeeee;
+}
+
+#banner{
+    display: inline-block;
+    width: 100%;
+
+}
+
+#intro_title {
+    font-size: 40px;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+}
+
+.column {
+    height: 100%;
+}
+
+/*  Left column */
+
+#left_column {
+    flex: 1;
+}
+
+.left_read {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.modal_container {
+    display: none;
+}
+
+.modal_show {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    left: 20%;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    border: 1px solid #888;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover {
+      cursor: pointer;
+      color: black;
+}
+
+.modal_containerTwo {
+      display: none;
+}
+
+.modal_showTwo {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;  
+}
+
+.modal-contentTwo {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+  
+.closeTwo {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeTwo:hover {
+      cursor: pointer;
+      color: black;
+}
+
+.modal_containerThree {
+    display: none;
+}
+
+.modal_showThree {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.modal-contentThree {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.closeThree {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeThree:hover {
+    cursor: pointer;
+    color: black;
+}
+
+/* END  */
+
+/* Main Column  */
+
+#main_column {
+    flex: 2;
+    height: 100%;
+}
+
+#intro_message:hover {
+    cursor: pointer;
+}
+
+#astro {
+    max-width: 100%;
+}
+
+/* END  */
+
+/* Right Column  */
+
+#right_column {
+    flex: 1;
+}
+
+/* END  */
+
+
+@media screen and (max-width: 800px) {
+    #left_column {
+        display: none;
+    }
+
+    #right_column {
+        display: none;
+    }
+    
+    #main_column {
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    #banner {
+        width: 100%;
+    }
+    
+    #intro_title {
+        font-size: 7vw;
+    }
+    
+}
